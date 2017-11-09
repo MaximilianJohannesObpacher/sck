@@ -50,3 +50,6 @@ router.delete('/:id', function(req,res,next) {
             res.json({success: true, message: "Deleted successfully."});
     });
 });
+
+module.exports = router;
+

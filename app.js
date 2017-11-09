@@ -3,12 +3,12 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const config = require('./config/database');
-const sck_news = require('./controllers/sck_news');
+var config = require('./config/database');
+var sck_news = require('./controllers/sck_news');
 
 mongoose.connect(config.database);
 
-const app = express();
+var app = express();
 const port = 3000;
 
 app.use(cors());
